@@ -1,5 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import ArrowIcon from '../components/ArrowIcon';
 
 class MyDocument extends Document {
   render() {

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const sunIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +82,18 @@ const ThemeSwitcher = () => {
 export default function Footer({ copyrightText }) {
   return (
     <footer className="py-16 flex flex-col items-center">
-      <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
+      <nav className="flex space-x-4 my-6">
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/legal">
+          <a>Rechtliches</a>
+        </Link>
+        <a href="https://picspace.io" target="_blank">
+          <span>Bilddatenbank</span>
+        </a>
+      </nav>
+      <p className="dark:text-white text-sm mb-3 opacity-60">
         {copyrightText}
       </p>
       <ThemeSwitcher />

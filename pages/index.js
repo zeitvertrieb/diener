@@ -14,7 +14,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        <h1 className="text-3xl lg:text-5xl text-center font-semibold mb-12">
           {globalData.blogTitle}
         </h1>
         <ul className="w-full">
@@ -29,7 +29,7 @@ export default function Index({ posts, globalData }) {
               >
                 <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
                   {post.data.date && (
-                    <p className="uppercase mb-3 font-bold opacity-60">
+                    <p className="text-sm mb-3 opacity-60">
                       {post.data.date}
                     </p>
                   )}
