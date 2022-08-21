@@ -52,7 +52,7 @@ export default function Index({ globalData }) {
               sonstige Honorarvereinbarung, wird automatisch nach den jeweils
               geltenden Honorarsätzen der Innung der Berufsfotografen
               (<a href="https://www.wko.at/branchen/gewerbe-handwerk/berufsfotografen/start.html"
-                target="_blank">https://www.wko.at/branchen/gewerbe-handwerk/berufsfotografen/start.html</a>
+                target="_blank" rel="noreferrer">https://www.wko.at/branchen/gewerbe-handwerk/berufsfotografen/start.html</a>
               ) in der jeweils gültigen Fassung für die zugrunde
               liegende Nutzung berechnet.
             </p>
@@ -131,7 +131,7 @@ export default function Index({ globalData }) {
               unterbunden und die Speicherdauer der Cookies verkürzt werden.
               Genauere Informationen hierzu finden Sie im Hilfemenü Ihres Browsers oder
               z.B. unter der URL <a href="http://www.aboutcookies.org"
-                target="_blank">http://www.aboutcookies.org</a>.
+                target="_blank" rel="noreferrer">http://www.aboutcookies.org</a>.
               Bereits gesetzte Cookies können Sie entweder direkt durch manuelle Löschung
               im entsprechenden Ordner auf Ihrer Festplatte oder durch Löschung über die
               entsprechende Funktion Ihres Browsers entfernt werden.
@@ -180,7 +180,7 @@ export default function Index({ globalData }) {
               Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie
               erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die
               Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden
-              Link (<a href="http://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=de</a>)
+              Link (<a href="http://tools.google.com/dlpage/gaoptout?hl=de" rel="noreferrer" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=de</a>)
               verfügbare Browser-Plugin herunterladen und installieren.
             </p>
             <p>
@@ -189,8 +189,8 @@ export default function Index({ globalData }) {
               Daten beim Besuch dieser Website verhindert: <a href="javascript:gaOptout()">Google Analytics deaktivieren</a>
             </p>
             <p>
-              Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a href="http://www.google.com/analytics/terms/de.html" target="_blank">
-              http://www.google.com/analytics/terms/de.html</a> bzw. unter <a href="https://www.google.de/intl/de/policies/" target="_blank">
+              Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a href="http://www.google.com/analytics/terms/de.html" target="_blank" rel="noreferrer">
+              http://www.google.com/analytics/terms/de.html</a> bzw. unter <a href="https://www.google.de/intl/de/policies/" target="_blank" rel="noreferrer">
               https://www.google.de/intl/de/policies/</a>.
               Wir weisen Sie darauf hin, dass auf dieser Website Google Analytics um den Code „anonymizeIp“
               erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
