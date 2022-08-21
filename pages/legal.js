@@ -9,8 +9,8 @@ export default function Index({ globalData }) {
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
-      <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center font-semibold mb-12">
+      <main className="w-full max-w-2xl mx-auto px-8">
+        <h1 className="text-5xl font-bold tracking-tight mt-auto mb-12 max-w-4xl sm:text-6xl md:text-7xl lg:text-8xl">
           Rechtliches
         </h1>
         <article className="prose dark:prose-dark">

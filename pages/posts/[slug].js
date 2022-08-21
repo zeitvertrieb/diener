@@ -42,9 +42,9 @@ export default function PostPage({
         description={frontMatter.description}
       />
       <Header name={globalData.name} />
-      <article className="px-6 md:px-0">
+      <div className="w-full max-w-2xl mx-auto px-8 ">
         <header>
-          <h1 className="text-3xl lg:text-5xl text-center font-semibold mb-12">
+          <h1 className="text-5xl font-bold tracking-tight mt-auto mb-12 max-w-4xl sm:text-6xl md:text-7xl lg:text-8xl">
             {frontMatter.title}
           </h1>
           {frontMatter.description && (
@@ -84,7 +84,7 @@ export default function PostPage({
             </Link>
           )}
         </div>
-      </article>
+      </div>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
         variant="large"

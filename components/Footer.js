@@ -51,7 +51,7 @@ const moonIcon = (
 
 const ThemeSwitcher = () => {
   return (
-    <div className="flex mt-6 bg-white justify-center dark:bg-gray-900 rounded-3xl p-1">
+    <div className="flex mt-4 bg-white justify-center dark:bg-gray-900 rounded-3xl p-1">
       <button
         type="button"
         aria-label="Use Dark Mode"
@@ -81,8 +81,8 @@ const ThemeSwitcher = () => {
 
 export default function Footer({ copyrightText }) {
   return (
-    <footer className="py-16 flex flex-col items-center">
-      <nav className="flex space-x-4 my-6">
+    <footer className="w-full py-8 mt-16 flex flex-col items-center">
+      <nav className="flex space-x-4">
         <Link href="/">
           <a>Home</a>
         </Link>

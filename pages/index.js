@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image'
 import { getPosts } from '../utils/mdx-utils';
 
 import Footer from '../components/Footer';
@@ -8,16 +9,26 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 
+import cover from '../public/cover.jpg'
+
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
-      <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center font-semibold mb-12">
-          {globalData.blogTitle}
-        </h1>
-        <ul className="w-full">
+      <main className="w-full flex flex-col flex-1">
+        <div className="inset-0 h-screen w-full">
+          <div className="absolute bottom-0 mb-12 flex flex-col w-full px-8 md:flex-row md:items-end">
+            <h1 className="text-5xl font-bold tracking-tight mt-auto max-w-4xl sm:text-6xl md:text-7xl lg:text-8xl dark:drop-shadow-xl">
+              {globalData.blogTitle}
+            </h1>
+            <a href="#" target="_blank" className="mt-8 md:mt-0 md:ml-auto whitespace-nowrap underline hover:no-underline">Österreichischer Schwimmberband</a>
+          </div>
+          <div className="absolute inset-0 overflow-hidden z-[-1] dark:opacity-80">
+            <Image src={cover} alt="Cover Image" layout="fill" objectFit="cover" />
+          </div>
+        </div>
+        <ul className="w-full max-w-2xl mx-auto px-8">
           {posts.map((post) => (
             <li
               key={post.filePath}
@@ -47,14 +58,6 @@ export default function Index({ posts, globalData }) {
         </ul>
       </main>
       <Footer copyrightText={globalData.footerText} />
-      <GradientBackground
-        variant="large"
-        className="fixed top-20 opacity-40 dark:opacity-60"
-      />
-      <GradientBackground
-        variant="small"
-        className="absolute bottom-0 opacity-20 dark:opacity-10"
-      />
     </Layout>
   );
 }

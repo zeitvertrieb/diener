@@ -1,6 +1,6 @@
 export default function PicspaceLink() {
   return (
-    <div className="fixed z-50 bottom-0 inset-x-0 h-24 flex justify-center items-center">
+    <div className="h-24 flex justify-center items-center">
       <a
         href="http://picspace.io/"
         target="_blank"
