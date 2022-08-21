@@ -89,7 +89,7 @@ export default function Footer({ copyrightText }) {
         <Link href="/legal">
           <a>Rechtliches</a>
         </Link>
-        <a href="https://picspace.io" target="_blank">
+        <a href="https://picspace.io" target="_blank" rel="noreferrer">
           <span>Bilddatenbank</span>
         </a>
       </nav>
