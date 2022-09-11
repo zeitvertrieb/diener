@@ -22,7 +22,12 @@ export default function Index({ posts, globalData }) {
             <h1 className="text-5xl font-bold tracking-tight mt-auto max-w-4xl sm:text-6xl md:text-7xl lg:text-8xl dark:drop-shadow-xl">
               {globalData.blogTitle}
             </h1>
-            <a href="#" target="_blank" className="mt-8 md:mt-0 md:ml-auto whitespace-nowrap underline hover:no-underline">Österreichischer Schwimmberband</a>
+            <a
+              href="https://d1i2u6o21zhb96.cloudfront.net/spaces/220t1BXHfoG8qhTMQk1TEAIeQ5U/gallery?sort=relevance&filters%5B0%5D%5Bidentifier%5D=keywords&filters%5B0%5D%5Bvalue%5D=OSV&size=20"
+              target="_blank"
+              className="mt-8 md:mt-0 md:ml-auto whitespace-nowrap underline hover:no-underline">
+                Österreichischer Schwimmberband (OSV)
+            </a>
           </div>
           <div className="absolute inset-0 overflow-hidden z-[-1] dark:opacity-80">
             <Image src={cover} alt="Cover Image" layout="fill" objectFit="cover" />
