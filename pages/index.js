@@ -28,6 +28,7 @@ export default function Index({ posts, globalData }) {
             <Image src={cover} alt="Cover Image" layout="fill" objectFit="cover" />
           </div>
         </div>
+        {/*
         <ul className="w-full max-w-2xl mx-auto px-8">
           {posts.map((post) => (
             <li
@@ -56,6 +57,7 @@ export default function Index({ posts, globalData }) {
             </li>
           ))}
         </ul>
+        */}
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
